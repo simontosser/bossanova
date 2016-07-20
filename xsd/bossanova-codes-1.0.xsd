@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--xsd versie 0.3  20-10-2008   -->
+<schema xmlns:bn="http://www.kornog-computing.com/bossanova/V1" 
+xmlns="http://www.w3.org/2001/XMLSchema"
+ attributeFormDefault="unqualified"
+  elementFormDefault="qualified"
+   targetNamespace="http://www.kornog-computing.com/bossanova/V1" version="1.0">
+	<simpleType name="level">
+		<restriction base="string">
+			<enumeration value="0"/>
+			<enumeration value="1"/>
+			<enumeration value="2"/>
+		</restriction>
+	</simpleType>	
+</schema>

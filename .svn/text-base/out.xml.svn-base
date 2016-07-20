@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<BNPANEL xmlns="http://www.kornog-computing.com/bossanova/V1">
+    <COLONNE>
+        <values xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BNLABEL" TEXT="youkaidi" WIDTH="3" BNLEVEL="1"/>
+        <values xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BNBUTTONBARPANEL" WIDTH="4">
+            <BNBUTTON FIELD="SAVE" TEXT="Valider" CACHABLE="false" NAV="true"/>
+            <BNBUTTON FIELD="CANCEL" TEXT="Annuler" CACHABLE="true" NAV="false"/>
+        </values>
+        <values xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BNCOMBOBOX" FIELD="COMBO" MANDATORY="true">
+            <OBJECTS>
+                <values xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:dateTime">2012-03-08T17:10:05.778+01:00</values>
+                <values xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">toto</values>
+                <values xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">tutu</values>
+            </OBJECTS>
+        </values>
+    </COLONNE>
+</BNPANEL>

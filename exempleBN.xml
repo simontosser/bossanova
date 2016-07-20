@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+	<BNPANEL xmlns="http://www.kornog-computing.com/bossanova/V1" TITLE="title" READONLY="false" BNLEVEL="1">		
+			<COLONNE>
+				<values xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BNTEXTFIELD" VALUE="mon text field" BNLEVEL="2" WIDTH="1" MANDATORY="y" />
+				<values xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BNLABEL" TEXT="mon texte" BNLEVEL="2" WIDTH="1" />
+				<values xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BNASTEROMARK"  BNLEVEL="0" EXCLUSIVE="y">
+					<label TEXT="mon astero texte" WIDTH="1" />					
+				</values>
+				<values xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BNSEPARATOR" LEVEL="1" WIDTH="4"/>
+				<values xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BNLINEBREAK" />
+				<values xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BNBUTTONBARPANEL" LEVEL="1" WIDTH="4">
+					<BNBUTTON TEXT="Save" LEVEL="1" NAV="false" CACHABLE="true" FIELD="Validate" />					
+					<BNBUTTON TEXT="Cancel" LEVEL="1" NAV="false" CACHABLE="true" FIELD="CANCEL" />						
+					<BNBUTTON TEXT="Next Page" LEVEL="1" NAV="false" CACHABLE="false" FIELD="DELETE" />
+					<BNBUTTON TEXT="Say Hello" LEVEL="2" NAV="false" CACHABLE="false" FIELD="SPECIE_SELECTION" />						
+				
+				</values>
+			</COLONNE>
+			<COLONNE>			
+			<values xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BNTEXTFIELD" VALUE="mon autre text field" BNLEVEL="0" WIDTH="1" MANDATORY="y" FIELD="SAVE" />
+			<values xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BNCOMBOBOX" BNLEVEL="2" MANDATORY="y" WIDTH="1" FIELD="COMBO" >
+					<OBJECTS>
+						<values xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:dateTime">2012-03-06T16:20:33.526+01:00</values>
+						<values xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">toto</values>
+						<values xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">tutu</values>
+					</OBJECTS>
+			</values>
+			<values xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BNCHECKBOX" LABEL="check" BNLEVEL="1" WIDTH="1" />
+			</COLONNE>	   
+<COLONNE>		
+	
+<values xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BNSCROLLPANE" BNLEVEL="1" WIDTH="1" FIELD="CLS" />
+<values xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BNLINEBREAK" />
+<values xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BNLINEBREAK" />
+<values xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BNLINEBREAK" />
+<values xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BNLINEBREAK" />
+<values xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BNLINEBREAK" />
+
+					
+			<values xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="BNDATEANDTIME" MANDATORY="y" BNLEVEL="0" WIDTH="1" FIELD="DATEPICKER"/>
+			</COLONNE>		
+	</BNPANEL>
