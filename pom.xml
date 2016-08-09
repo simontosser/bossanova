@@ -14,8 +14,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<scm>
-		<connection>scm:git:http://bitbucket.kornog-computing.net:7999/bn/bossanova.git</connection>
-		<developerConnection>scm:http://git@bitbucket.kornog-computing.net:7999/bn/bossanova.git</developerConnection>
+		<connection>scm:git:ssh://git@bitbucket.kornog-computing.net:7999/bn/bossanova.git</connection>
+		<developerConnection>scm:git:ssh://git@bitbucket.kornog-computing.net:7999/bn/bossanova.git</developerConnection>
 		<url>http://bitbucket.kornog-computing.net:7990/projects/BN/repos/bossanova</url>
 		<tag>bossanova-v0.1.0</tag>
 	</scm>
