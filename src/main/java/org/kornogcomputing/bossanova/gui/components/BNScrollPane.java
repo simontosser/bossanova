@@ -44,6 +44,12 @@ public class BNScrollPane extends JScrollPane implements BNComponent {
 		super();		
 		this.compWidth = compWidth;
 	}
+	
+	public BNScrollPane(Component component) {
+		super(component);		
+		
+	}
+	
 
 	@Override
 	public int getCompHeight() {

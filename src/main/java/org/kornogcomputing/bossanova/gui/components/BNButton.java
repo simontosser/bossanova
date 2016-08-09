@@ -84,6 +84,29 @@ public class BNButton extends JButton implements BNComponent {
 		this.level = level;	
 		this.addActionListener(actionListener);
 	}
+	
+	/**
+	 * 
+	 * @param text
+	 * @param navigationButton
+	 * @param cachable
+	 * @param actionCommand
+	 * @param imagePath
+	 * @param level
+	 * @param actionListener
+	 */
+	public BNButton(final String text, final boolean navigationButton,
+			final boolean cachable, final String actionCommand,final String imagePath,
+			final BNLevel level, final ActionListener actionListener) {
+		this(text, navigationButton, cachable, actionCommand,level,actionListener);
+		setFont(this.getFont().deriveFont(Font.BOLD));
+		setBorderPainted(false);
+		setOpaque(false);
+		setFocusPainted(false);
+		setIcon(new ImageIcon(getClass().getResource(imagePath)));
+		this.setText("");
+		this.setToolTipText(text);
+	}
 
 	/**
 	 * Constructor for manager frame button
