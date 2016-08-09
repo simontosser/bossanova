@@ -13,7 +13,12 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
+	<scm>
+		<connection>scm:git:ssh://git@bitbucket.kornog-computing.net:7999/bn/bossanova.git</connection>
+		<developerConnection>scm:ssh://git@bitbucket.kornog-computing.net:7999/bn/bossanova.git</developerConnection>
+		<url>http://bitbucket.kornog-computing.net:7990/projects/BN/repos/bossanova</url>
+		<tag>bossanova-v0.1.0</tag>
+	</scm>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -38,8 +43,8 @@
 		</dependency>
 		<dependency>
 			<groupId>com.jgoodies</groupId>
-    <artifactId>jgoodies-forms</artifactId>
-    <version>1.6.0</version>
+			<artifactId>jgoodies-forms</artifactId>
+			<version>1.6.0</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
@@ -47,21 +52,18 @@
 			<artifactId>jaxb-api</artifactId>
 			<version>2.2</version>
 		</dependency>
-		
-		<!-- <dependency>
-			<groupId>com.sun.xml.bind</groupId>
-			<artifactId>jaxb-xjc</artifactId>
-			<version>2.2.1</version>
-		</dependency>-->
+
+		<!-- <dependency> <groupId>com.sun.xml.bind</groupId> <artifactId>jaxb-xjc</artifactId> 
+			<version>2.2.1</version> </dependency> -->
 		<dependency>
-    	<groupId>org.springframework</groupId>
-    	<artifactId>spring-context</artifactId>
-    	<version>2.0.4</version>
-    </dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>2.0.4</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
-	<plugin>
+			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
 					<encoding>UTF-8</encoding>
@@ -71,4 +73,14 @@
 			</plugin>
 		</plugins>
 	</build>
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<url>http://nexus.kornog-computing.com/nexus/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<url>http://nexus.kornog-computing.com/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
