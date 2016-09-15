@@ -1,9 +1,11 @@
 package org.kornogcomputing.bossanova.gui.components;
 
+import java.awt.Color;
 import java.awt.Component;
 import java.awt.Font;
 import java.awt.event.ActionListener;
 
+import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 
@@ -101,6 +103,8 @@ public class BNButton extends JButton implements BNComponent {
 		this(text, navigationButton, cachable, actionCommand,level,actionListener);
 		setFont(this.getFont().deriveFont(Font.BOLD));
 		setBorderPainted(false);
+		setBackground(Color.WHITE);
+		setBorder(BorderFactory.createLineBorder(Color.BLACK,2));
 		setOpaque(false);
 		setFocusPainted(false);
 		setIcon(new ImageIcon(getClass().getResource(imagePath)));
